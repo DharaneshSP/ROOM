@@ -1,0 +1,43 @@
+
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+
+client/Room/node_modules/
+server/node_modules/
+client/Room/.pnp
+client/Room/.pnp.js
+client/Room/.yarn/install-state.gz
+
+# testing
+client/Room/coverage/
+
+# next.js
+client/Room/.next/
+client/Room/out/
+
+# production
+client/Room/build
+
+# misc
+client/Room/.DS_Store
+client/Room/*.pem
+
+# debug
+client/Room/npm-debug.log*
+client/Room/yarn-debug.log*
+client/Room/yarn-error.log*
+
+
+# local env files
+client/Room/.env*.local
+client/Room/.env
+
+# vercel
+client/Room/.vercel
+
+# typescript
+client/Room/*.tsbuildinfo
+client/Room/next-env.d.ts
+
+.vscode/
