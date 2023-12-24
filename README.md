@@ -45,6 +45,7 @@ A minimalistic secure application offering secret password protected chat rooms 
 
 ```bash
     npm run start
+```
 
 ***
 localhost:3000
