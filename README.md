@@ -3,11 +3,26 @@
 
 A minimalistic secure application offering secret password protected chat rooms for discreet and private conversations.
 
-# 
+***
+
+
+
+## Tech Stack
+
+- ![image](https://img.shields.io/badge/Next.js-000000.svg?style=for-the-badge&logo=nextdotjs&logoColor=white
+)
+
+- ![image](https://img.shields.io/badge/Prisma-2D3748.svg?style=for-the-badge&logo=Prisma&logoColor=white)
+
+- ![image](https://img.shields.io/badge/Supabase-3FCF8E.svg?style=for-the-badge&logo=Supabase&logoColor=white)
+
+- ![image](https://img.shields.io/badge/Socket.io-010101.svg?style=for-the-badge&logo=socketdotio&logoColor=white)
+
+- ![image](https://img.shields.io/badge/Tailwind%20CSS-06B6D4.svg?style=for-the-badge&logo=Tailwind-CSS&logoColor=white)
+
+- ![React](https://img.shields.io/badge/zustand-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 
 ## Installation
-
-
 
   ```bash
     git clone https://github.com/DharaneshSP/ROOM.git
@@ -16,8 +31,6 @@ A minimalistic secure application offering secret password protected chat rooms 
 
 ***
 <br>
-
-
 
 ```bash
     cd server
