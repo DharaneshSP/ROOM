@@ -9,8 +9,8 @@ A minimalistic secure application offering secret password protected chat rooms 
 
 
 
-```bash
-  git clone https://github.com/DharaneshSP/ROOM.git
+  ```bash
+    git clone https://github.com/DharaneshSP/ROOM.git
 ```
 
 
