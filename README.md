@@ -44,9 +44,7 @@
     ```
         npm run start
     ```
-    > In Default Server will run at PORT 8000
-
-
+    
 - ### Start Main App
 
     - Redirect To Room folder
@@ -69,6 +67,7 @@
     ```
         npm run dev
     ```
+
 
 > Open http://localhost:3000  at your Web Browser    
 
