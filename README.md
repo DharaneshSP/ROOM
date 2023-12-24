@@ -31,42 +31,44 @@
 
     - Redirect To Server folder
       
-    ```
-        cd server
-    ```
+        ```
+            cd server
+        ```
     - Install Dependencies
       
-    ```
-        npm i
-    ```
+        ```
+            npm i
+        ```
     - Start The Server
       
-    ```
-        npm run start
-    ```
+        ```
+            npm run start
+        ```
     
 - ### Start Main App
 
     - Redirect To Room folder
-
-    ```
-        cd client/Room
-    ```
+    
+        ```
+            cd client/Room
+        ```
 
     - Install The Dependencies
 
-    ```
-        npm i
-    ```
+
+        ```
+            npm i
+        ```
+    
     - Create an .env file and paste your database url
  
     - Ensure and update the socket server port in the libs/constants.js file.
 
     - Start The App
       
-    ```
-        npm run dev
-    ```
+        ```
+            npm run dev
+        ```
 
 
 > Open http://localhost:3000  at your Web Browser
