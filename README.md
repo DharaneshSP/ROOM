@@ -23,7 +23,6 @@ A minimalistic secure application offering secret password protected chat rooms 
 
 - ![image](https://img.shields.io/badge/Tailwind%20CSS-06B6D4.svg?style=for-the-badge&logo=Tailwind-CSS&logoColor=white)
 
-- ![React](https://img.shields.io/badge/zustand-%F8991Ca.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 
 ## Installation
 
