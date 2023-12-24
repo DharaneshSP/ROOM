@@ -15,7 +15,7 @@ A minimalistic secure application offering secret password protected chat rooms 
 ## Installation
 
 - Clone The Repository
-```
+```bash
     git clone https://github.com/DharaneshSP/ROOM.git
 ```
 
