@@ -3,10 +3,6 @@
 
 A minimalistic secure application offering secret password protected chat rooms for discreet and private conversations.
 
-***
-
-
-
 ## Tech Stack
 
 - ![image](https://img.shields.io/badge/Next.js-000000.svg?style=for-the-badge&logo=nextdotjs&logoColor=white)
@@ -16,46 +12,53 @@ A minimalistic secure application offering secret password protected chat rooms 
 - ![image](https://img.shields.io/badge/Prisma-2D3748.svg?style=for-the-badge&logo=Prisma&logoColor=white)
 - ![image](https://img.shields.io/badge/Tailwind%20CSS-06B6D4.svg?style=for-the-badge&logo=Tailwind-CSS&logoColor=white)
 -  ![image](https://img.shields.io/badge/zustand-071D49.svg?style=for-the-badge&logo=React&logoColor=white)
-
 ## Installation
 
-  ```bash
+- Clone The Repository
+```
     git clone https://github.com/DharaneshSP/ROOM.git
 ```
 
+- ### Start Socket Server 
 
-***
-<br>
+    - Redirect To Server folder
+      
+    ```
+        cd server
+    ```
+    - Install Dependencies
+      
+    ```
+        npm i
+    ```
+    - Start The Server
+      
+    ```
+        npm run start
+    ```
 
-```bash
-    cd server
-```
 
-```bash
-    npm i
-```
-```bash
-    npm run start
-```
 
-***  
+- ### Start Main App
 
-<br>
-- 
+    - Redirect To Room folder
 
-```bash
-    cd client/Room
-```
+    ```
+        cd client/Room
+    ```
 
-```bash
-    npm i
-```
+    - Install The Dependencies
 
-```bash
-    npm run start
-```
+    ```
+        npm i
+    ```
+    - Create an .env file and paste your database url
 
-***
-localhost:3000
-***
+    - Start The App
+      
+    ```
+        npm run dev
+    ```
+
+> Open http://localhost:3000  at your Web Browser    
 
