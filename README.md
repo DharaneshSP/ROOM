@@ -1,7 +1,15 @@
 
-# ROOM
+<div align="center">
+    <h1>
+      ROOM
+    </h1>
+</div>
 
-A minimalistic secure application offering secret password protected chat rooms for discreet and private conversations.
+<div align="center">
+  A minimalistic secure application offering secret password protected chat rooms for discreet and private conversations.
+</div>
+
+<div></div>
 
 ## Tech Stack
 
@@ -36,7 +44,7 @@ A minimalistic secure application offering secret password protected chat rooms 
     ```
         npm run start
     ```
-    > Server will run at PORT 8000
+    > In Default Server will run at PORT 8000
 
 
 - ### Start Main App
@@ -53,6 +61,8 @@ A minimalistic secure application offering secret password protected chat rooms 
         npm i
     ```
     - Create an .env file and paste your database url
+ 
+    - Ensure and update the socket server port in the libs/constants.js file.
 
     - Start The App
       
