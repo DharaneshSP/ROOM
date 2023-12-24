@@ -14,6 +14,10 @@ A minimalistic secure application offering secret password protected chat rooms 
 
 - ![image](https://img.shields.io/badge/Prisma-2D3748.svg?style=for-the-badge&logo=Prisma&logoColor=white)
 
+- ![image](https://img.shields.io/badge/NextAuth-000000.svg?style=for-the-badge&logo=nextdotjs&logoColor=white
+)
+
+
 - ![image](https://img.shields.io/badge/Supabase-3FCF8E.svg?style=for-the-badge&logo=Supabase&logoColor=white)
 
 - ![image](https://img.shields.io/badge/Socket.io-010101.svg?style=for-the-badge&logo=socketdotio&logoColor=white)
