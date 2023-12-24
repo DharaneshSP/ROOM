@@ -36,7 +36,7 @@ A minimalistic secure application offering secret password protected chat rooms 
     ```
         npm run start
     ```
-
+    > Server will run at PORT 8000
 
 
 - ### Start Main App
