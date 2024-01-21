@@ -48,10 +48,10 @@ const handleJoinRoom = () => {
 
 useEffect(() => {
 
-    const newSocket= io.connect("http://localhost:8000");
+    const newSocket= io.connect(`${SOCKET_SERVER}`);
     console.log(SOCKET_SERVER);
     async function getData(croom){
-        const alldata= await fetch(`http://localhost:3000/api/allchat/${croom}`);
+        const alldata= await fetch(`${BACKEND}/api/allchat/${croom}`);
         const result = await alldata.json();
             if(alldata.ok){
                 setDatas(result);
@@ -136,7 +136,7 @@ useEffect(()=>{
   return (
     <div  className='h-screen'>
            <div className='display-grid h-screen' >
-            <div className='border-b-2 border-black border-solid flex justify-around items-center' >
+            <div className=' border-b-2 border-black border-solid flex justify-around items-center' >
             <div>
                 <Chathead  socket={socket} currentroom={currentroom} setCurrentroom={setCurrentroom} room={room}/>
             </div>
@@ -147,10 +147,10 @@ useEffect(()=>{
               <div></div>
     
             <div className='flex gap-1'>
-                  <a href='/' className='text-black border-black border-2 px-2 hover:bg-black  hover:text-white '>
+                  <a href='/' className=' p-1 text-white border-[#E384FF] border-0 px-2 bg-black  hover:text-white '>
                       Home
                   </a>
-                  <a href='/dashboard' className='text-black border-black border-2 px-2 hover:bg-black  hover:text-white '>
+                  <a href='/dashboard' className=' ml-1 p-1 text-white border-[#E384FF] border-0 px-2 bg-black  hover:text-white '>
                     Change Room
                   </a>
             </div>

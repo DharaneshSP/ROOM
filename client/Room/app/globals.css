@@ -21,11 +21,20 @@
 
 html{
 
-   background-color:#F8F9F5;
+   /* background-color:#F8F9F5; */
+   background-color: #191825;
    scroll-behavior: smooth;
    color:white;  
+
+   height: -webkit-fill-available;
 }
 
+
+body{
+
+  height: -webkit-fill-available;
+
+}
 
 
 .btn-conteiner {

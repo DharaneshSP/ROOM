@@ -45,11 +45,11 @@ const textinput = ({socket,currentroom}) => {
   return (
     <div >
       
-                  <div  className='flex justify-center  gap-3 '>
+                  <div  className='fixed left-2 right-2 bottom-3 flex justify-center  gap-3 '>
                               
                                   <input
-                                      className='grow  focus:ring-0 text-black '
-                                      style={{height:'8vh',backgroundColor:'#F8F9F5',outline:'none'}}
+                                      className='grow rounded focus:ring-0 text-white bg-[#080808]'
+                                      style={{height:'8vh',outline:'none'}}
                                       type='text'
                                       value={message}
                                       onChange={(e) => setMessage(e.target.value)}
@@ -57,7 +57,7 @@ const textinput = ({socket,currentroom}) => {
                                   />
                           
 
-                              <div className='flex justify-center items-center'>
+                              <div className='flex justify-center items-center mr-1'>
                                   <button  style={{height:'7vh'}} className='flex justify-center items-center' 
                                       onClick={handleSendMessage}>
                                             
@@ -76,7 +76,7 @@ const textinput = ({socket,currentroom}) => {
                                                             </a>
                                                         </div> */}
 
-                                                        <div className='text-white bg-black h-full w-full px-4 text-center flex justify-center items-center py-2' style={{height:'8vh'}} >
+                                                        <div className=' rounded text-[#E384FF] bg-black h-full w-full px-4 text-center flex justify-center items-center py-2' style={{height:'8vh'}} >
                                                           <p>SEND</p>
                                                         </div>
 

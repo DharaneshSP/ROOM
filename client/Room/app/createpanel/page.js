@@ -3,8 +3,8 @@
 
 import axios from 'axios';
 import React, { useEffect, useRef, useState } from 'react'
-import Navbar from '../component/navbar';
 import { BACKEND } from '../libs/constants';
+import toast from 'react-hot-toast';
 
 const page = () => {
 
@@ -32,14 +32,18 @@ useEffect(()=>{
 const create=()=>{
 
     const show=()=>{
-      console.log("created")
-      alert("created");
-      available.current=="Not Available"
+     
+      toast.success("Room created successfully");
+      available.current="Not Available"
+      
     }
     if(available.current=="Available" && password.length>0  ){
       axios.post("/api/createroom",{roomname,password})
       .then(show)
-      .catch((e)=>console.log("error found"))
+      .catch((e)=>toast.error("Please Try Again"))
+    }
+    else{
+      toast.error("Enter Valid Room Name");
     }
 }
 
@@ -77,55 +81,61 @@ const execute = (e)=>{
   return (
     <div>
 
-      <Navbar/>
-     <div className='flex justify-center h-screen items-center'>
+        <div className='border border-3 border-black border-solid p-3' >
+            <div className='flex items-center'>
+                  <a className=' border-2 border-black border-solid p-3 px-5 bg-black text-[#E384FF] '>
+                          ROOM
+                  </a>
+            </div>
+          </div>
+     
+     <div className='fixed left-0 right-0 top-3  flex justify-center h-full items-center '>
 
-      <div className='border-solid border-2 border-black w-auto p-4'>
+      <div className='border-solid border-2 border-black w-auto p-10'>
           
           <div className="sm:mx-auto sm:w-full sm:max-w-sm">
               
-              <h2 className=" rounded border-solid border-2 border-black bg-black  mt-1 mb-3 text-center text-2xl font-bold leading-9 tracking-tight text-white">
+              <h2 className=" rounded border-solid border-2 border-black bg-black  mt-1 mb-3 text-center text-2xl font-bold leading-9 tracking-tight text-[#E384FF]">
                 CREATE ROOM
               </h2>
             </div>  
 
             <div>
-              <label htmlFor="email" className="mt-1 block text-m font-medium leading-6 text-black">
-                Roomname
-              </label>
+              
               <div className="mt-2">
                 <input
                  
-                  name="email"
+                 
                   type="text"
                   value={roomname}
                   onChange={execute}
                   required
+                  placeholder='RoomName'
                   style={{width:'60vw'}}
                   password="RoomName"
-                  className="rounded w-full text-black "
+                  className="rounded w-full text-black mt-4 text-white bg-[black] focus:outline-none"
                 />
               </div>
               <label htmlFor="email" className="block text-sm font-medium leading-6" style={{color:(available.current=="Available")?'green':'red'}}>
-                   {available.current}
+                   { (roomname.length>0) ?available.current:"‎"}
               </label>
             </div>
 
 
             <div>
               <div className="flex items-center justify-between">
-                <label htmlFor="password" className="block  text-m font-medium leading-6 text-black mt-4">
+                {/* <label htmlFor="password" className="block  text-m font-medium leading-6 text-black mt-4">
                   Password
-                </label>
+                </label> */}
               </div>
               <div className="mt-2">
                 <input
-                  type="text"
+                  type="password"
                   onChange={(e)=>setpassword(e.target.value)}
                   required
                   style={{width:'60vw'}}
                   placeholder='Password'
-                  className="rounded text-black"
+                  className="rounded text-white bg-[black]"
                 />
               </div>
             </div>
@@ -133,7 +143,7 @@ const execute = (e)=>{
             <div>
               <button
                 onClick={create}
-                className="flex w-full justify-center rounded-md  px-3 py-1.5 text-sm font-semibold leading-6 shadow-sm border-2 border-black border-solid bg-white text-black hover:bg-black hover:text-white mt-5"
+                className="flex w-full justify-center rounded-md  px-3 py-1.5 text-sm font-semibold leading-6 shadow-sm border-2 border-black border-solid bg-[#E384FF] text-black hover:bg-black hover:text-white mt-5"
               >
                 CREATE
               </button>

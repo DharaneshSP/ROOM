@@ -4,7 +4,7 @@ import React from 'react'
 
 const error = ({error,reset}) => {
   return (
-    <div>
+    <div >
       User has no access 
     </div>
   )
