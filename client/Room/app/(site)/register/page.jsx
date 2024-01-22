@@ -49,7 +49,7 @@ export default function Example() {
             <div className="sm:mx-auto sm:w-full sm:max-w-sm">
                           
                           <h2 className="rounded border-solid border-2 border-black bg-black  mt-1 mb-3 text-center text-2xl font-bold leading-9 tracking-tight text-[#E384FF]">
-                            JOIN ROOM
+                            CREATE ACCOUNT
                           </h2>
                         </div>  
   
